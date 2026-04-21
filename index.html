@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show/Hide Sections</title>
+  </head>
+
+  <body onload="applySaveColor()">
+    <h1 onclick="showHxContent(1)">partie1</h1>
+    <div id="title1" style="display: none">
+      <p>Mon premier paragraphe</p>
+      <p>Mon second paragraphe</p>
+    </div>
+
+    <h1 onclick="showHxContent(2)">partie2</h1>
+    <div id="title2" style="display: none">
+      <p>Autre paragraphe 1</p>
+      <p>Autre paragraphe 2</p>
+    </div>
+
+    <br />
+
+    <button onclick="hideAllDivs()">Masquer tout</button>
+
+    <br /><br />
+
+    <p>
+      Titre n :
+      <input type="text" id="title" />
+      <button onclick="alertTitle()">afficher</button>
+    </p>
+
+   <form >
+     <select name="titles" id="selectColor">
+      <option value="white">blanc</option>
+      <option value="blue">bleu</option>
+      <option value="green">vert</option>
+      <option value="yellow">jaune</option>
+    </select>
+    <button onclick="saveCookie()" type="submit">Enregistrer</button>
+   </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
